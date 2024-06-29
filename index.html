@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="appointment-form" onsubmit="return validateForm()">
+        <h2 class="form-heading2">Форма записи на прием</h2>
+        <label for="name">Фамилия Имя Отчество </label>
+        <input type="text" id="name" placeholder="Иванов Иван Иванович"><br>
+
+        <label for="bday">Дата рождения </label>
+        <input type="date" id="bday" max="2006-12-31"><br>
+
+        <label for="phone">Номер телефона </label>
+        <input type="phone" id="phone" placeholder="+79998887766"><br>
+
+        <label for="appointment-date">Дата приема </label>
+        <input type="date" id="appointment-date"><br>
+
+        <label for="appointment-time">Время приема </label>
+        <input type="time" id="appointment-time" min="8:00" max="22:00"><br>
+
+        <button type="submit">Записаться</button>
+    </form>
+    <p class="error" id="errorMessage"></p>
+    <footer>
+        
+    </footer>
+</body>
+</html>
