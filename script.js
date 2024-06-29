@@ -17,7 +17,6 @@ function validateForm(){
         return false;
     } 
 
-
     errorMessage.innerHTML = '';
     alert('Данные отправлены');
     return true;

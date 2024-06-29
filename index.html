@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form class="appointment-form" onsubmit="return validateForm()">
+    <form id="appointment-form" onsubmit="return validateForm()">
         <h2 class="form-heading2">Форма записи на прием</h2>
         <label for="name">Фамилия Имя Отчество </label>
         <input type="text" id="name" placeholder="Иванов Иван Иванович" pattern="[а-яА-ЯёЁ]+" required><br>
@@ -23,13 +23,14 @@
         <input type="date" id="appointment-date" name="appointment-date"><br>
 
         <label for="appointment-time">Время приема </label>
-        <input type="time" id="appointment-time" min="8:00" max="22:00"><br>
+        <input type="time" id="appointment-time" min value="8:00" max value="22:00"><br>
 
         <button type="submit">Записаться</button>
     </form>
     <p class="error" id="errorMessage"></p>
     <footer>
-        
+        <h2 class="header-footer">МедВед</h2>
+        <p class="header-p">Медицинские услуги</p>
     </footer>
 </body>
 </html>
